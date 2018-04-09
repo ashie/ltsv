@@ -33,7 +33,7 @@ Because it is a simple solution, like an egg of Columbus. Although the combined 
 Recently the importance of log analysis is increasing, so you often add to logs a custom values not contained by a standard format, or you are sometimes forced to output logs which are frequently ordered to change its format. LTSV is suitable for these cases, too.
 
 ### What is the good points of LTSV?
-* Easy to parse. For example, <pre>Hash[gets.split("\t").map{|f| f.split(":", 2)}]</pre> in ruby.
+* Easy to parse. For example, `Hash[gets.split("\t").map{|f| f.split(":", 2)}]` in ruby.
 * Don't need any special parser.
 * Don't need any special formatter to output logs. You can configure it with standard config files of apache or nginx.
 * Open against adding a new field. In short, there is no influence on any existing programs when you add a new column.
@@ -71,7 +71,6 @@ You can also add the time field into the head, the tail, or anywhere. If the scr
 Comparing with the combined format:
 
 * A bit worse to read by human
-
   * apart from whether the combined format is good for reading...
 * Increase the size because of the amount of names of fields.
 
